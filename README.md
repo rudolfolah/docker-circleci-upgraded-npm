@@ -1,6 +1,6 @@
 # Docker CircleCI Upgraded NPM Images
 
-CircleCI provides convenience images for a variety of Node versions: https://hub.docker.com/r/circleci/node
+CircleCI provides convenience images for a variety of Node versions: https://hub.docker.com/r/cimg/node
 
 However, the NPM version in some of the images may not match the version that you would like.
 
