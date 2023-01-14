@@ -1,0 +1,3 @@
+FROM cimg/node:19.4.0
+RUN sudo npm install -g npm@latest
+CMD ["npm", "--version"]
