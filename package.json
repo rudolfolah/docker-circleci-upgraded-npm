@@ -1,0 +1,22 @@
+{
+  "name": "docker-circleci-upgraded-npm",
+  "version": "1.0.0",
+  "description": "CircleCI provides convenience images for a variety of Node versions: https://hub.docker.com/r/cimg/node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudolfolah/docker-circleci-upgraded-npm.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rudolfolah/docker-circleci-upgraded-npm/issues"
+  },
+  "homepage": "https://github.com/rudolfolah/docker-circleci-upgraded-npm#readme",
+  "devDependencies": {
+    "csv-parse": "^5.3.3"
+  }
+}
