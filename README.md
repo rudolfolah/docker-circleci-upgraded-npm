@@ -8,6 +8,8 @@ This project contains a set of Dockerfiles that are based on the convenience ima
 
 CircleCI documentation for convenience images: https://circleci.com/docs/circleci-images/
 
+NPM versions: https://www.npmjs.com/package/npm?activeTab=versions
+
 ## Generating the Dockerfiles
 
 The `index.js` can be run with `npm start`. Using the `image_list.csv` it will generate a set of Dockerfiles that include an upgrade to the latest version of NPM or a specific version. The `Dockerfile.base` is the template that is used to generate the Dockerfiles.
