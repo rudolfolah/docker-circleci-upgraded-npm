@@ -24,6 +24,6 @@ image_tag,npm_version
 ## Building an image
 
 ```shell
-docker build -t cimg-node-19-4-0-latest-npm -f Dockerfile.node-19-4-0 .
-docker run -it --rm cimg-node-19-4-0-latest-npm
+docker build -t cimg-node-19-4-0-npm-latest -f ./dist/Dockerfile.cimg_node-19.4.0-npm-latest .
+docker run -it --rm cimg-node-19-4-0-npm-latest
 ```

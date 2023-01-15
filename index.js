@@ -12,9 +12,9 @@ csv.forEach((line) => {
   const { image_tag: imageTag, npm_version: npmVersion } = line;
 
   const dockerFile = `FROM ${BASE_IMAGE_NAME}:${imageTag}
-  RUN sudo npm install -g npm@${npmVersion}
-  CMD ["npm", "--version"]
-  `;
+RUN sudo npm install -g npm@${npmVersion}
+CMD ["npm", "--version"]
+`;
 
   const outputPath = `./dist/Dockerfile.${BASE_IMAGE_NAME.replace("/", "_")}-${imageTag}-npm-${npmVersion}`;
   fs.writeFileSync(outputPath, dockerFile);
