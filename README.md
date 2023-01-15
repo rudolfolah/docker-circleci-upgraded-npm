@@ -23,7 +23,18 @@ image_tag,npm_version
 
 ## Building an image
 
+Building to include the latest npm version:
+
 ```shell
 docker build -t cimg-node-19-4-0-npm-latest -f ./dist/Dockerfile.cimg_node-19.4.0-npm-latest .
 docker run -it --rm cimg-node-19-4-0-npm-latest
 ```
+
+Building to include a specific npm version:
+
+```shell
+docker build -t cimg-node-16-19-browsers-npm-8-19-3 -f ./dist/Dockerfile.cimg_node-16.19-browsers-npm-8.19.3 .
+docker run -it --rm cimg-node-16-19-browsers-npm-8-19-3
+```
+
+After running the container, you can verify the NPM version by checking the output.
