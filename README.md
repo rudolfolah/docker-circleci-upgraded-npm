@@ -1,12 +1,13 @@
 # Docker CircleCI Upgraded NPM Images
 
-CircleCI provides convenience images for a variety of Node versions: https://hub.docker.com/r/cimg/node
+CircleCI provides convenience images for a variety of Node versions:
+* [cimg/node on Docker Hub](https://hub.docker.com/r/cimg/node)
+* [cimg/node on GitHub](https://github.com/CircleCI-Public/cimg-node)
+* [CircleCI documentation for convenience images](https://circleci.com/docs/circleci-images/)
 
 However, the NPM version in some of the images may not match the version that you would like.
 
 This project contains a set of Dockerfiles that are based on the convenience images, but with the NPM version upgraded to specific versions.
-
-CircleCI documentation for convenience images: https://circleci.com/docs/circleci-images/
 
 NPM versions: https://www.npmjs.com/package/npm?activeTab=versions
 
@@ -40,3 +41,19 @@ docker run -it --rm cimg-node-16-19-browsers-npm-8-19-3
 ```
 
 After running the container, you can verify the NPM version by checking the output.
+
+You can run the `cimg/node` container to verify the difference in NPM versions:
+
+```shell
+docker run --it -rm cimg/node:16.19-browsers
+# in the container:
+npm -v
+```
+
+For example, in one of the images with the latest NPM version, the output difference is `8.19.3` when the included npm version is `7.24.0`.
+
+## Publishing the images
+
+After generating the images and running the container, you can push the Docker image to a private (or public Docker Hub) registry.
+
+Instructions are here: https://docs.docker.com/engine/reference/commandline/push/
